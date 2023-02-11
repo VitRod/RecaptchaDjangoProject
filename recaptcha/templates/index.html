@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="{% static 'styles.css' %}" />
 </head>
 <body>
+        <!-- Video Background -->
+		<video class="video-background" id="video-background" loop muted autoplay>
+        <source src="../static/Palm_Tree.mp4"> </source>
+
+		</video>
+
+
     <form method="POST">
         {% csrf_token %}
         {{ form.name }}

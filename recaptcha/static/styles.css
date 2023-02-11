@@ -10,6 +10,25 @@
     margin: 0;
 }
 
+/* Video Background */
+.video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+  }
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+
 body {
     background-color: deepskyblue;
     height: 100vh;
@@ -27,6 +46,7 @@ form {
     margin: 15px;
     padding: 10px;
     border-radius: 10px;
+    z-index : 10;
 }
 
 input {
